@@ -1,14 +1,20 @@
-FROM node:18-alpine3.17 as build
+FROM node:18-alpine3 as BUILD_IMAGE
 
-WORKDIR /app
-COPY . /app
+WORKDIR /app/react-app
 
+
+COPY package.json .
 RUN npm install
+COPY . .
 RUN npm run build
 
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install nginx -y
-COPY --from=build /app/dist /var/www/html/
+# we created the build and for increasing module size of container we just copy builts 
+FROM node:18-alpine3 as PRODUCTION_IMAGE
+
+WORKDIR /app/react-app
+COPY --from=BUILD_IMAGE /app/react-app/dist /app/react-app/dist
 EXPOSE 3000
-CMD ["nginx","-g","daemon off;"]
+COPY package.json .
+COPY vite.config.js .
+EXPOSE 3000
+CMD ["npm","run","preview"]
