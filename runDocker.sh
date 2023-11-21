@@ -1,4 +1,4 @@
 #!/bin/bash
-docker build -t alirezakm-portfoli  .
+ docker build -t vite-3d-portfolio:latest .
 
-docker run -p 3000:3000 alirezakm-portfoli 
+docker run -p 8080:8080 vite-3d-portfolio:latest
