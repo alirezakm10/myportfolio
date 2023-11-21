@@ -5,6 +5,7 @@ WORKDIR /app/react-app
 
 COPY package.json .
 RUN npm install
+RUN npm i -g vite
 COPY . .
 RUN npm run build
 
