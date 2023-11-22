@@ -16,6 +16,7 @@ WORKDIR /app/react-app
 COPY --from=BUILD_IMAGE /app/react-app/dist /app/react-app/dist
 COPY package.json .
 COPY vite.config.js .
+RUN npm install
 
 EXPOSE 3000
 CMD ["npm","run","preview"]
