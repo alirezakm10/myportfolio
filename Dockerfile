@@ -21,4 +21,4 @@ COPY package.json .
 COPY vite.config.js .
 USER 3dportfolio
 EXPOSE 3000
-CMD ["npm","run","preview"]
+CMD ["npx","vite","preview"]
