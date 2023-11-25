@@ -29,12 +29,12 @@ const About = () => {
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>My Skills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
+        <div className='mt-16 flex justify-center flex-wrap gap-10'>
           {skills.map((skill) => (
-            <div className='block-container w-40 h-40' key={skill.name}>
+            <div className='block-container w-20 h-20' key={skill.name}>
               <div className='btn-back rounded-xl' />
               <div className='btn-front rounded-xl flex flex-col justify-center items-center'>
-                <p>{skill.name}</p>
+                <p className="text-xs mb-1" >{skill.name}</p>
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}

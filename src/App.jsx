@@ -1,10 +1,15 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-
+import i18n from "./i18n";
 import { Footer, Navbar } from "./components";
 import { About, Contact, Home, Projects } from "./pages";
+import { I18nextProvider } from "react-i18next";
+
+
 
 const App = () => {
+
   return (
+    <I18nextProvider i18n={i18n}>
     <main className='bg-slate-300/20'>
       <Router>
         <Navbar />
@@ -26,6 +31,7 @@ const App = () => {
         </Routes>
       </Router>
     </main>
+    </I18nextProvider>
   );
 };
 

@@ -3,6 +3,9 @@ import {
     car,
     contact,
     css,
+    docker,
+    threejs,
+    saipa,
     estate,
     express,
     git,
@@ -23,13 +26,23 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
 } from "../assets/icons";
 
 export const skills = [
     {
         imageUrl: css,
         name: "CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: docker,
+        name: "DOCKER",
+        type: "Backend",
+    },
+    {
+        imageUrl: threejs,
+        name: "Three Js",
         type: "Frontend",
     },
     {
@@ -111,13 +124,13 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "NextJs Developer",
+        company_name: "Saipa",
+        icon: saipa,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "In Progress",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining web applications using Next.js, Redux and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
@@ -125,12 +138,12 @@ export const experiences = [
     },
     {
         title: "React Native Developer",
-        company_name: "Tesla",
+        company_name: "Freelance",
         icon: tesla,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "Jan 2019 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining web applications using React-Native and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
@@ -138,12 +151,12 @@ export const experiences = [
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
+        company_name: "Freelance",
         icon: shopify,
         iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        date: "Jan 2008 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining web applications using React.js, Wordpress and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
@@ -151,12 +164,12 @@ export const experiences = [
     },
     {
         title: "Full stack Developer",
-        company_name: "Meta",
+        company_name: "Nagila",
         icon: meta,
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        date: "Jul 2020 - Jul 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining CRM applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
@@ -173,12 +186,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/alirezakm10',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/alireza-karbalayi-morad-2a1975216',
     }
 ];
 
@@ -188,48 +201,55 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Saipa Cms - Senior Front-End Developer (NextJs RTK) ',
         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        demoLink:'',
+        sourceLink: 'https://github.com/adrianhajdin/pricewise',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
         name: 'Nagila – Mern Stack (NextJs-Redux) ',
         description: 'Lead the development of a comprehensive CRM project using the MERN stack, ensuring seamless user interfaces, robust functionalities, and effective integration with backend systems to enhance customer relationship management for the company.   .',
-        link: 'https://github.com/adrianhajdin/threads',
+        demoLink:'',
+        sourceLink: '',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
         name: 'Viola Payment - Senior Front-End (NextJs-Redux) ',
         description: 'As a Senior Frontend Developer in our startup, lead the design and implementation of user interfaces for a cutting-edge blockchain payment method. Additionally, spearhead the development and integration of smart contracts, while implementing a robust JWT tokenization authentication system, ensuring a seamless and secure financial transaction experience for our users. ',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        demoLink:'',
+        sourceLink: 'https://github.com/alirezakm10/viola-landings.git',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
         name: 'Gotimate – Front-End Developer (NextJs RTK) ',
         description: 'Market research based on blockchain network with Token built on the blockchain platform.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        demoLink:'',
+        sourceLink: 'https://github.com/alirezakm10/gotimate-frontend.git',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
         name: 'Loaningo – Front-End Developer (NextJs RTK)',
         description: 'A cutting-edge crypto lending platform committed to revolutionizing the traditional lending industry. ',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        demoLink:'',
+        sourceLink: 'https://github.com/alirezakm10/loaningo-frontend.git',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'Dorsa Company - (Nextjs - Rtk)',
         description: 'Connected wordpress Api for implementing an pwa web app with infinte scroll data fetching.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        demoLink:'',
+        sourceLink: 'https://github.com/alirezakm10/dorsa-task.git',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'Mobile 3d shop - (Nextjs - Rtk)',
         description: 'user rage test with global anti fast click detector to avoid memory leak - (used debouncer)',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        demoLink:'',
+        sourceLink: 'https://github.com/alirezakm10/rage_test.git',
     }
 ];

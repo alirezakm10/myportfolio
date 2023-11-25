@@ -1,4 +1,7 @@
 import css from './css.svg'
+import docker from './docker.svg'
+import threejs from './threejs.svg'
+import saipa from './saipa.svg'
 import express from './express.svg'
 import git from './git.svg'
 import github from './github.svg'
@@ -29,6 +32,8 @@ import soundoff from './soundoff.png'
 
 export {
     css,
+    docker,
+    threejs,
     express,
     git,
     github,
@@ -38,6 +43,7 @@ export {
     motion,
     mui,
     nextjs,
+    saipa,
     nodejs,
     react,
     redux,
