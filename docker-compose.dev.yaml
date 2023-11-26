@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  client:
+    image: myportfolio-dev-i
+    build:
+      dockerfile: Dockerfile.dev
+    container_name: myportfolio-dev-c
+    volumes:
+      - ./myportfolio:myportfolio
+      - node_modules:/myportfolio/node_modules
+      ports:
+        - "3000:3000"
+      environment:
+        - NODE_ENV=development
+volumes:
+  node_modules
