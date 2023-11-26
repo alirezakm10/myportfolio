@@ -201,7 +201,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Saipa Cms - Senior Front-End Developer (NextJs RTK) ',
         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        demoLink:'',
+        demoLink:'saipapanel.bugsilex.com',
         sourceLink: 'https://github.com/adrianhajdin/pricewise',
     },
     {
@@ -217,7 +217,7 @@ export const projects = [
         theme: 'btn-back-blue',
         name: 'Viola Payment - Senior Front-End (NextJs-Redux) ',
         description: 'As a Senior Frontend Developer in our startup, lead the design and implementation of user interfaces for a cutting-edge blockchain payment method. Additionally, spearhead the development and integration of smart contracts, while implementing a robust JWT tokenization authentication system, ensuring a seamless and secure financial transaction experience for our users. ',
-        demoLink:'',
+        demoLink:'https://github.com/alirezakm10/viola-landings.git',
         sourceLink: 'https://github.com/alirezakm10/viola-landings.git',
     },
     {
@@ -225,7 +225,7 @@ export const projects = [
         theme: 'btn-back-pink',
         name: 'Gotimate – Front-End Developer (NextJs RTK) ',
         description: 'Market research based on blockchain network with Token built on the blockchain platform.',
-        demoLink:'',
+        demoLink:'https://gotimate.bugsilex.com',
         sourceLink: 'https://github.com/alirezakm10/gotimate-frontend.git',
     },
     {
@@ -233,7 +233,7 @@ export const projects = [
         theme: 'btn-back-black',
         name: 'Loaningo – Front-End Developer (NextJs RTK)',
         description: 'A cutting-edge crypto lending platform committed to revolutionizing the traditional lending industry. ',
-        demoLink:'',
+        demoLink:'https://loaningo.bugsilex.com',
         sourceLink: 'https://github.com/alirezakm10/loaningo-frontend.git',
     },
     {
@@ -241,7 +241,7 @@ export const projects = [
         theme: 'btn-back-yellow',
         name: 'Dorsa Company - (Nextjs - Rtk)',
         description: 'Connected wordpress Api for implementing an pwa web app with infinte scroll data fetching.',
-        demoLink:'',
+        demoLink:'https://dorsa.bugsilex.com',
         sourceLink: 'https://github.com/alirezakm10/dorsa-task.git',
     },
     {
@@ -249,7 +249,7 @@ export const projects = [
         theme: 'btn-back-yellow',
         name: 'Mobile 3d shop - (Nextjs - Rtk)',
         description: 'user rage test with global anti fast click detector to avoid memory leak - (used debouncer)',
-        demoLink:'',
+        demoLink:'https://rage.bugsilex.com',
         sourceLink: 'https://github.com/alirezakm10/rage_test.git',
     }
 ];

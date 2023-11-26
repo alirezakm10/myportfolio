@@ -25,18 +25,18 @@ const Navbar = () => {
         </div>
       </NavLink>
 
-      <DropDown label={t('lng')} data={lngs} setter={handleChangeLanguage} />
+      {/* <DropDown label={t('lng')} data={lngs} setter={handleChangeLanguage} /> */}
 
 
 
 
-      <div>
+      {/* <div>
           {Object.keys(lngs).map((lng) => (
             <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
               {lngs[lng].nativeName}
             </button>
           ))}
-        </div>
+        </div> */}
       <nav className='flex text-lg gap-7 font-medium'>
         <NavLink to='/about' className={({ isActive }) => isActive ? "text-blue-600" : "text-black" }>
           {t("nav.about")}
