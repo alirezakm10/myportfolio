@@ -11,4 +11,4 @@ RUN apt-get update
 RUN apt-get install nginx -y
 COPY --from=build /app/dist /var/www/html/
 EXPOSE 3000
-CMD ["nginx","-g","daemon off;"]
+CMD ["npx","vite","preview"]
