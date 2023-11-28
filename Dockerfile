@@ -1,6 +1,6 @@
 FROM node:17-alpine as builder
 WORKDIR /app
-COPY package.json package-lock.json ./
+COPY package.json .
 RUN npm i --production
 COPY . .
 RUN npm run build
