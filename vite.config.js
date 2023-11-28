@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.glb'],
   preview: {
-    host:'0.0.0.0',
+    host:true,
+    strictPort:true,
     port: 3010
 }
 })
