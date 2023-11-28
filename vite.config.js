@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.glb'],
-  preview: {
+  server: {
     host:true,
     strictPort:true,
     port: 3010
