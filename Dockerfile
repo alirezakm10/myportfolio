@@ -2,6 +2,7 @@ FROM node:17-alpine as builder
 WORKDIR /app
 COPY package.json .
 RUN npm i --production
+RUN npm i vite
 COPY . .
 RUN npm run build
 FROM node:17-alpine
