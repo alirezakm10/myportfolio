@@ -1,12 +1,11 @@
 import { Html } from "@react-three/drei";
+import {PacmanLoader } from 'react-spinners'
 
 const Loader = () => {
   return (
-    <Html>
-      <div className='flex justify-center items-center'>
-        <div className='w-20 h-20 border-2 border-opacity-20 border-blue-500 border-t-blue-500 rounded-full animate-spin'></div>
+      <div className='flex justify-center items-center w-full h-screen z-2'>
+      <PacmanLoader  color="#2b77e7" size={90} />
       </div>
-    </Html>
   );
 };
 

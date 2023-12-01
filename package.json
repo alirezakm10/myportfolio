@@ -23,6 +23,7 @@
     "react-i18next": "^13.5.0",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.17.0",
+    "react-spinners": "^0.13.8",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.157.0"
   },
