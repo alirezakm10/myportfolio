@@ -3,7 +3,7 @@ import { FaHouseChimney } from "react-icons/fa6";
 // import { logo } from "../assets/images";
 import { useTranslation } from "react-i18next";
 import DropDown from "./DropDown";
-
+import { FaRegFilePdf } from "react-icons/fa";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -19,11 +19,17 @@ const Navbar = () => {
 
   return (
     <header className='header'>
-      <NavLink to='/'>
-        <div className="flex justify-center items-center rounded-lg w-10 h-10 transition neo-brutalism-blue hover:bg-blue-300" >
-      <FaHouseChimney  size='30px' color="white" stroke="#000" />
-        </div>
-      </NavLink>
+      <div className="flex gap-5" >
+        <NavLink to='/'>
+          <div className="flex justify-center items-center rounded-lg w-10 h-10 transition neo-brutalism-blue hover:bg-blue-300" >
+        <FaHouseChimney  size='30px' color="white" stroke="#000" />
+          </div>
+        </NavLink>
+          <a href="https://drive.google.com/file/d/1Xl6kEAjfzxtb-wQz0RnZx8HAWRJr1rUH/view?usp=drive_link" target="_blank" external className="flex justify-center items-center rounded-lg w-auto p-2 text-white h-10 transition neo-brutalism-blue hover:bg-blue-300" >
+        <FaRegFilePdf  size='30px' color="white" stroke="#000" />
+        <span>See My Resume</span>
+          </a>
+      </div>
 
       {/* <DropDown label={t('lng')} data={lngs} setter={handleChangeLanguage} /> */}
 
