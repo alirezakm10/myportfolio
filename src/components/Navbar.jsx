@@ -19,15 +19,15 @@ const Navbar = () => {
 
   return (
     <header className='header'>
-      <div className="flex gap-5" >
+      <div className="flex flex-col md:flex-row gap-5" >
         <NavLink to='/'>
           <div className="flex justify-center items-center rounded-lg w-10 h-10 transition neo-brutalism-blue hover:bg-blue-300" >
         <FaHouseChimney  size='30px' color="white" stroke="#000" />
           </div>
         </NavLink>
-          <a href="https://drive.google.com/file/d/1Xl6kEAjfzxtb-wQz0RnZx8HAWRJr1rUH/view?usp=drive_link" target="_blank" external className="flex justify-center items-center rounded-lg w-auto p-2 text-white h-10 transition neo-brutalism-blue hover:bg-blue-300" >
+          <a href="https://drive.google.com/file/d/1Xl6kEAjfzxtb-wQz0RnZx8HAWRJr1rUH/view?usp=drive_link" className='flex gap-2' target="_blank" external className="flex justify-center items-center rounded-lg w-auto p-2 text-white h-10 transition neo-brutalism-blue hover:bg-blue-300" >
         <FaRegFilePdf  size='30px' color="white" stroke="#000" />
-        <span>See My Resume</span>
+        <span>PDF</span>
           </a>
       </div>
 
